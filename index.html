@@ -7,28 +7,28 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="container">
-    <header>
-      <h1>Fitness App</h1>
-      <p>¡Mejora tu salud y bienestar!</p>
-    </header>
-    <nav>
-      <button>Inicio</button>
-      <button>Ejercicios</button>
-      <button>Progreso</button>
-    </nav>
-    <main>
-      <h2>¡Bienvenido a Fitness App!</h2>
-      <p>Registra tus ejercicios y sigue tu progreso.</p>
-      <img src="fitness-image.jpg" alt="Imagen de fitness">
-    </main>
-    <footer>
-      <i class="dumbbell-icon"></i>
-      <i class="heart-icon"></i>
-      <i class="runner-icon"></i>
-    </footer>
+  <h1>Fitness App</h1>
+  <button id="btn-ejercicio">Agregar Ejercicio</button>
+  <button id="btn-rutina">Crear Rutina</button>
+  <button id="btn-progreso">Ver Progreso</button>
+
+  <div id="ejercicio-form" style="display: none;">
+    <h2>Agregar Ejercicio</h2>
+    <input type="text" id="nombre-ejercicio" placeholder="Nombre del ejercicio">
+    <button id="guardar-ejercicio">Guardar</button>
   </div>
 
-  <script src="app.js"></script>
+  <div id="rutina-form" style="display: none;">
+    <h2>Crear Rutina</h2>
+    <input type="text" id="nombre-rutina" placeholder="Nombre de la rutina">
+    <button id="guardar-rutina">Guardar</button>
+  </div>
+
+  <div id="progreso" style="display: none;">
+    <h2>Ver Progreso</h2>
+    <p> Aquí se mostrará el progreso del usuario.</p>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>

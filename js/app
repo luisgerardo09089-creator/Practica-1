@@ -1,6 +1,39 @@
-// Agregar funcionalidad a los botones
-document.querySelectorAll('button').forEach(button => {
-  button.addEventListener('click', () => {
-    alert(`Has clicado en ${button.textContent}`);
-  });
+const btnEjercicio = document.getElementById('btn-ejercicio');
+const btnRutina = document.getElementById('btn-rutina');
+const btnProgreso = document.getElementById('btn-progreso');
+
+const ejercicioForm = document.getElementById('ejercicio-form');
+const rutinaForm = document.getElementById('rutina-form');
+const progresoDiv = document.getElementById('progreso');
+
+btnEjercicio.addEventListener('click', () => {
+  ejercicioForm.style.display = 'block';
+  rutinaForm.style.display = 'none';
+  progresoDiv.style.display = 'none';
+});
+
+btnRutina.addEventListener('click', () => {
+  rutinaForm.style.display = 'block';
+  ejercicioForm.style.display = 'none';
+  progresoDiv.style.display = 'none';
+});
+
+btnProgreso.addEventListener('click', () => {
+  progresoDiv.style.display = 'block';
+  ejercicioForm.style.display = 'none';
+  rutinaForm.style.display = 'none';
+});
+
+const guardarEjercicio = document.getElementById('guardar-ejercicio');
+guardarEjercicio.addEventListener('click', () => {
+  const nombreEjercicio = document.getElementById('nombre-ejercicio').value;
+  alert(Ejercicio "${nombreEjercicio}" guardado);
+  ejercicioForm.style.display = 'none';
+});
+
+const guardarRutina = document.getElementById('guardar-rutina');
+guardarRutina.addEventListener('click', () => {
+  const nombreRutina = document.getElementById('nombre-rutina').value;
+  alert(Rutina "${nombreRutina}" guardada);
+  rutinaForm.style.display = 'none';
 });

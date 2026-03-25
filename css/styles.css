@@ -2,6 +2,143 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: #0d0d0d;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+  color: #e0e0e0;
+}
+
+.app {
+  width: 100%;
+  max-width: 480px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #1a1a1a;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 12px 30px rgba(0, 255, 102, 0.25);
+}
+
+.banner {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 5px solid #00ff66;
+}
+
+.header {
+  background: linear-gradient(135deg, #000000, #1a1a1a);
+  color: #00ff66;
+  text-align: center;
+  padding: 20px;
+}
+
+.header h1 {
+  font-size: 1.8rem;
+}
+
+.header p {
+  margin-top: 5px;
+  font-size: 1rem;
+}
+
+.perfil {
+  background: #1a1a1a;
+  text-align: center;
+  padding: 15px;
+  color: #e0e0e0;
+}
+
+.perfil h2 {
+  font-size: 1.2rem;
+  color: #00ff66;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+  padding: 15px;
+  gap: 10px;
+}
+
+.menu button {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  border-radius: 12px;
+  background: #00ff66;
+  color: #000;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.menu button:hover {
+  background: #00cc55;
+}
+
+main {
+  flex: 1;
+  padding: 20px;
+}
+
+.seccion {
+  display: none;
+}
+
+.seccion.activa {
+  display: block;
+}
+
+.seccion h2 {
+  margin-bottom: 12px;
+  color: #00ff66;
+}
+
+.card {
+  background: #0d0d0d;
+  border-left: 6px solid #00ff66;
+  border-radius: 14px;
+  padding: 15px;
+  margin-bottom: 12px;
+  box-shadow: 0 4px 10px rgba(0,255,102,0.4);
+}
+
+.card h3 {
+  color: #00ff66;
+  margin-bottom: 6px;
+}
+
+.card p, .card ul {
+  color: #e0e0e0;
+  line-height: 1.5;
+}
+
+.hidden {
+  display: none;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  background: #000000;
+  color: #00ff66;
+  padding: 15px;
+  font-size: 1.6rem;
+}* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: Arial, sans-serif;
 }
 
